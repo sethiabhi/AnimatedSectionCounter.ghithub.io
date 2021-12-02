@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: chocolate;
+}
+
+.centers {
+    margin-top: 15%;
+    text-align: center;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.keypoint{
+    font-size: 35px;
+    text-align:center;
+
+}
+.heighlight{
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 45px;
+}
